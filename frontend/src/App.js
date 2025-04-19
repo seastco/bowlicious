@@ -22,8 +22,53 @@ function App() {
 
   return (
     <div className="app-container">
-      <PhoneForm setPhone={setPhone} data={data} setData={setData} />
-      <MessageView data={data} />
+      <div className="app-header">
+        <h1>🌮 BOWLICIOUS 🌮</h1>
+        <p className="tagline">Send a fake promotional Chipotle text for $1.</p>
+        <p className="tagline">Watch the whole thing unfold.</p>
+      </div>
+      
+      <div className="steps-container">
+        <div className="step">
+          <div className="step-number">1</div>
+          <div className="step-content">
+            <p>Enter a phone number and pay</p>
+          </div>
+        </div>
+        
+        <div className="step">
+          <div className="step-number">2</div>
+          <div className="step-content">
+            <p>They'll get this text:</p>
+            <div className="text-message">
+              CHIPOTLE: Reply with "BOWLICIOUS" for a free meal code! Deal lasts through Friday!
+            </div>
+          </div>
+        </div>
+        
+        <div className="step">
+          <div className="step-number">3</div>
+          <div className="step-content">
+            <p>They reply: "BOWLICIOUS"</p>
+          </div>
+        </div>
+        
+        <div className="step">
+          <div className="step-number">4</div>
+          <div className="step-content">
+            <p>We call them a fatass gremlin</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="action-section">
+        <PhoneForm setPhone={setPhone} data={data} setData={setData} />
+        <MessageView data={data} />
+      </div>
+      
+      <div className="disclaimer">
+        <p>Not actually Chipotle.</p>
+      </div>
     </div>
   );
 }
