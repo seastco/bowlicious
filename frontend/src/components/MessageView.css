@@ -1,0 +1,4 @@
+.message-view { width: 100%; max-width: 400px; margin-top: 20px; }
+.message-container { border: 1px solid #ccc; padding: 16px; height: 240px; overflow-y: auto; background: white; border-radius: 4px; }
+.bot-message { color: green; margin-bottom: 8px; }
+.user-message { color: #333; margin-bottom: 8px; }
